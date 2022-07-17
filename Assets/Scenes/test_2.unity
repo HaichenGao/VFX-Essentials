@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -529,7 +529,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!73398921 &364042782
 VFXRenderer:
   serializedVersion: 1
@@ -538,7 +538,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364042781}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -677,6 +677,9 @@ GameObject:
   - component: {fileID: 475519281}
   - component: {fileID: 475519280}
   - component: {fileID: 475519283}
+  - component: {fileID: 475519284}
+  - component: {fileID: 475519285}
+  - component: {fileID: 475519286}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -742,14 +745,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475519279}
-  m_LocalRotation: {x: 0.0013124002, y: -0.99563366, z: 0.09225697, w: 0.014163372}
-  m_LocalPosition: {x: -0.88, y: 1.75, z: 5.79}
+  m_LocalRotation: {x: -0.0048208004, y: 0.9943743, z: -0.09214028, w: -0.052025884}
+  m_LocalPosition: {x: -0.305, y: 0.663, z: 2.128}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 10.588, y: -178.37, z: 0}
+  m_LocalEulerAnglesHint: {x: 10.588, y: 185.99, z: 0}
 --- !u!114 &475519283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -874,6 +877,45 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!114 &475519284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475519279}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717d87428631c0342802fe97c72c374b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensitivity: 4
+--- !u!114 &475519285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475519279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9e15c83c1aa3fa4384622e3efa95b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensitivity: 1.7
+  maxYAngle: 80
+--- !u!114 &475519286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475519279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4534ffc9ccc4b84587846b91bec3b8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &494441507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -976,9 +1018,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581712953}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: c8f848b1eea00f84f93df70fc131e8ad, type: 3}
-  m_Controller: {fileID: 9100000, guid: 491ffa50e929b214fa46084925ad91ab, type: 2}
+  m_Controller: {fileID: 9100000, guid: 555558e3d1db8ec409f047410a2b9839, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3508,10 +3550,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74ed5cf969606614bb3b40fa431be0f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleAmountLeft: 2500
-  particleAmountRight: 2500
   tensionSpeed: 50
   relaxationSpeed: 100
+  upperLimit: 250
+  lowerLimit: 2500
 --- !u!1 &1299297066
 GameObject:
   m_ObjectHideFlags: 0
@@ -3625,7 +3667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1334670130
 Transform:
   m_ObjectHideFlags: 0
