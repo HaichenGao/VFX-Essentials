@@ -3422,7 +3422,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166742385}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 8314c6877db72784999909a859e9525c, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: 4337d46c8024c9a43b5824f30ee88314, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
@@ -3461,6 +3461,15 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: {x: 0.99999994, y: 1, z: 0.99999994}
         m_Name: Transform_Right_scale
+        m_Overridden: 1
+      - m_Value: {x: 353.20062, y: 346.18796, z: 341.96158}
+        m_Name: Transform_Spine2_angles
+        m_Overridden: 1
+      - m_Value: {x: 0.11898888, y: 1.0861112, z: -0.063661}
+        m_Name: Transform_Spine2_position
+        m_Overridden: 1
+      - m_Value: {x: 1, y: 0.9999999, z: 1}
+        m_Name: Transform_Spine2_scale
         m_Overridden: 1
     m_Vector4f:
       m_Array: []
@@ -3543,7 +3552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Property:
-    m_Name: Transform_Left
+    m_Name: Transform_Spine2
   Target: {fileID: 2341981266188555498}
 --- !u!114 &1166742393
 MonoBehaviour:

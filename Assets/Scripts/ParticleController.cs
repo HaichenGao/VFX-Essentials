@@ -40,7 +40,7 @@ public class ParticleController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.Q) && flagw == false){
+        if (Input.GetKey(KeyCode.Q)){
             particleAmountLeft -= tensionSpeed;
             enableLeft = 5;
             visualEffect.SetInt("ParticleAmountLeft", particleAmountLeft);
@@ -73,7 +73,7 @@ public class ParticleController : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.W) && flagq == false)
+        if (Input.GetKey(KeyCode.W))
         {
             particleAmountRight -= tensionSpeed;
             enableRight = 5;
