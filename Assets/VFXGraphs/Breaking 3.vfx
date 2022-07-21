@@ -201,8 +201,8 @@ MonoBehaviour:
   - title: Emit every nth index (right chest)
     position:
       serializedVersion: 2
-      x: 5733
-      y: 1804
+      x: 5750
+      y: 1828
       width: 997
       height: 486
     contents:
@@ -23504,7 +23504,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 5758, y: 1863}
+  m_UIPosition: {x: 5775, y: 1887}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -23563,7 +23563,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 6078, y: 1866}
+  m_UIPosition: {x: 6095, y: 1890}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -23694,7 +23694,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 6312, y: 1871}
+  m_UIPosition: {x: 6329, y: 1895}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -23825,7 +23825,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 6311, y: 2095}
+  m_UIPosition: {x: 6329, y: 2119}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -23989,7 +23989,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 6530, y: 1994}
+  m_UIPosition: {x: 6547, y: 2018}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -24346,7 +24346,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661616781}
       inputSlot: {fileID: 8926484042661616739}
-    position: {x: 5799.3335, y: 1999.3333}
+    position: {x: 5816.6665, y: 2023.3333}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661616781
@@ -27074,7 +27074,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661616882}
       inputSlot: {fileID: 8926484042661616747}
-    position: {x: 6089.0845, y: 2165.3835}
+    position: {x: 6106.6665, y: 2189.3335}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661616882
@@ -32768,7 +32768,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.TArcTorus, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"torus":{"transform":{"position":{"x":0.0,"y":0.0,"z":0.0},"angles":{"x":90.0,"y":0.0,"z":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0}},"majorRadius":3.7100000381469728,"minorRadius":0.7799999713897705},"arc":6.2831854820251469}'
+      m_SerializableObject: '{"torus":{"transform":{"position":{"x":0.0,"y":0.0,"z":0.0},"angles":{"x":90.0,"y":0.0,"z":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0}},"majorRadius":8.0,"minorRadius":0.7799999713897705},"arc":6.2831854820251469}'
     m_Space: 0
   m_Property:
     name: arcTorus
@@ -34010,7 +34010,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.TArcTorus, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"torus":{"transform":{"position":{"x":0.0,"y":0.0,"z":0.0},"angles":{"x":90.0,"y":0.0,"z":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0}},"majorRadius":3.7100000381469728,"minorRadius":0.7799999713897705},"arc":6.2831854820251469}'
+      m_SerializableObject: '{"torus":{"transform":{"position":{"x":0.0,"y":0.0,"z":0.0},"angles":{"x":90.0,"y":0.0,"z":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0}},"majorRadius":8.0,"minorRadius":0.7799999713897705},"arc":6.2831854820251469}'
     m_Space: 0
   m_Property:
     name: arcTorus
