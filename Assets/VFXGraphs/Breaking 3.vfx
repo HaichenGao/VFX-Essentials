@@ -11232,7 +11232,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616100}
   - {fileID: 8926484042661616106}
   - {fileID: 8926484042661616112}
-  m_UIPosition: {x: 7113, y: 1171}
+  m_UIPosition: {x: 7103, y: 1129}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -11961,7 +11961,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616123}
   - {fileID: 8926484042661616125}
   - {fileID: 8926484042661616130}
-  m_UIPosition: {x: 7125, y: 1827}
+  m_UIPosition: {x: 7103, y: 1723}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
