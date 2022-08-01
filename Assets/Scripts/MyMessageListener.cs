@@ -13,6 +13,9 @@ public class MyMessageListener : MonoBehaviour
 
     public int Avg_data_l = 200;
     public int Avg_data_r = 200;
+
+    public int dataRec = 500;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,11 +33,21 @@ public class MyMessageListener : MonoBehaviour
         int[] raw = msg.Split(',').Select(int.Parse).ToArray();
         Avg_data_l = (int)((19 * Avg_data_l + raw[0]) / 20);
         Avg_data_r = (int)((19 * Avg_data_r + raw[1]) / 20);
-        left = (double)Avg_data_l / 450;
-        right = (double)Avg_data_r / 450;
+        left = (double)Avg_data_l / dataRec;
+        right = (double)Avg_data_r / dataRec;
 
-        Debug.Log("ArrivedL:" + left.ToString("0.00"));
-        Debug.Log("ArrivedR:" + right.ToString("0.00"));
+        if(left > 1)
+        {
+            left = 1;
+        }
+
+        if(right > 1)
+        {
+            right = 1;
+        }
+
+        //Debug.Log("ArrivedL:" + left.ToString("0.00"));
+        //Debug.Log("ArrivedR:" + right.ToString("0.00"));
         //Debug.Log("ArrivedL:" + msg);
     }
 
