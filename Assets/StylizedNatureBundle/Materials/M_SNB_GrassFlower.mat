@@ -4,17 +4,22 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: M_SNB_GrassFlower
   m_Shader: {fileID: 4800000, guid: f7835d26e94875f47848e4600cd0ab70, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON
+  m_ShaderKeywords: _ADD_PRECOMPUTED_VELOCITY _ALPHATEST_ON _DISABLE_SSR_TRANSPARENT
+    _DOUBLESIDED_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: 2475
+  stringTagMap:
+    MotionVector: User
+    RenderType: TransparentCutout
+  disabledShaderPasses:
+  - TransparentBackface
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -83,14 +88,26 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _AddPrecomputedVelocity: 1
+    - _AlphaClip: 0.5
+    - _AlphaCutoff: 0.5
+    - _AlphaCutoffEnable: 1
+    - _AlphaDstBlend: 0
+    - _AlphaSrcBlend: 1
+    - _BlendMode: 0
     - _BumpScale: 1
-    - _Cutoff: 0.75
+    - _CullMode: 0
+    - _CullModeForward: 0
+    - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DirectionalShadows: 0
     - _DirectionalTranslucency: 0.143
+    - _DoubleSidedEnable: 1
+    - _DoubleSidedNormalMode: 2
     - _DstBlend: 0
     - _EmissionPower: 0
     - _EmissionStrength: 0
+    - _EnableFogOnTransparent: 1
     - _Float0: 0
     - _Float1: 1.26
     - _FlowerTilingOffset: 9.18
@@ -111,6 +128,10 @@ Material:
     - _Parallax: 0.02
     - _PointLightPunchTrough: 1
     - _PointLightTranslucency: 3
+    - _ReceivesSSR: 1
+    - _ReceivesSSRTransparent: 0
+    - _RenderQueueType: 1
+    - _RequireSplitLighting: 0
     - _SSSColorPower: 3.7
     - _SSSForce: 0.4
     - _SSSPower: 1
@@ -120,15 +141,38 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 8
+    - _StencilRefDistortionVec: 4
+    - _StencilRefGBuffer: 10
+    - _StencilRefMV: 40
+    - _StencilWriteMask: 6
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskDistortionVec: 4
+    - _StencilWriteMaskGBuffer: 14
+    - _StencilWriteMaskMV: 40
     - _SubsurfaceDistortionModifier: 0.5
+    - _SupportDecals: 1
+    - _SurfaceType: 0
+    - _TessEdgeLength: 16
+    - _TessMax: 25
+    - _TessMaxDisp: 25
+    - _TessMin: 10
+    - _TessPhongStrength: 0.5
+    - _TessValue: 16
     - _TranslucencyForce: 0.4
     - _TranslucencyLightInfluence: 0
     - _TranslucencyModifier: 0.5
     - _TranslucencyPower: 1
     - _TranslucencyScale: 1
+    - _TransparentBackfaceEnable: 0
+    - _TransparentCullMode: 2
+    - _TransparentSortPriority: 0
+    - _TransparentZWrite: 1
     - _TrunkWindAmplitude: 0.03
     - _TrunkWindPower: 0.6
     - _UVSec: 0
+    - _UseShadowThreshold: 0
     - _WindFoliageAmplitude: 0.073
     - _WindFoliageSpeed: 0.3
     - _WindLeafAmplitude: 0.035
@@ -138,12 +182,16 @@ Material:
     - _WindTrunkAmplitude: 0.06
     - _WindTrunkPower: 0.6
     - _WindTrunkSpeed: 0.3
+    - _ZTestDepthEqualForOpaque: 3
+    - _ZTestGBuffer: 3
+    - _ZTestTransparent: 4
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _Color0: {r: 0.79033947, g: 1, b: 0.033018887, a: 0}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _FlowerColor01: {r: 1, g: 0.808344, b: 0.2688677, a: 1}
     - _FlowerColor02: {r: 1, g: 0.96920115, b: 0.7216981, a: 1}
     - _FlowerColor03: {r: 1, g: 0.82427126, b: 0.28773567, a: 0}
@@ -161,3 +209,4 @@ Material:
     - _SSSTint: {r: 1, g: 0.99379236, b: 0.38207522, a: 0}
     - _SpecularColor: {r: 0.3921569, g: 0.3921569, b: 0.3921569, a: 1}
     - _TranslucencyTint: {r: 1, g: 0.96403116, b: 0.18396205, a: 0}
+  m_BuildTextureStacks: []
