@@ -76,7 +76,7 @@ MonoBehaviour:
     m_Value: 0
   top:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0.23083273, b: 0.74509805, a: 1}
+    m_Value: {r: 0.10258684, g: 0.3373149, b: 0.8584906, a: 1}
   middle:
     m_OverrideState: 1
     m_Value: {r: 0.972549, g: 0.52830344, b: 0.26274508, a: 1}
